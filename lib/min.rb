@@ -9,5 +9,7 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  groceries.values.min
+  result = {}
+  groceries.values.each{|department| department.each{ |value| result << {value => value} }}
+  result.min
 end
