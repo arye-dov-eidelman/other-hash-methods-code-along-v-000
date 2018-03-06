@@ -10,6 +10,10 @@ require 'pry'
 
 def get_the_min(groceries)
   result = {}
-  groceries.values.each{|department| department.each{ |value| result[value] = value} }}
+  groceries.values.each{|department|
+    department.each{ |value|
+      result[value] = value
+    }
+  }
   result.min
 end
