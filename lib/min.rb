@@ -16,5 +16,5 @@ def get_the_min(groceries)
     }
   }
   binding.pry
-  result.min.keys
+  result.keys.min
 end
