@@ -12,7 +12,7 @@ def get_the_min(groceries)
   result = {}
   groceries.values.each{|department|
     department.each{ |value|
-      result[value] = value
+      result[value] = {}
     }
   }
   result.min.keys
