@@ -10,6 +10,6 @@ require 'pry'
 
 def get_the_values(groceries)
   result = []
-  groceries.values.each{}.each{ |value| result << value }
+  groceries.values.each{|department| department.each{ |value| result << value }}
   result
 end
