@@ -15,5 +15,6 @@ def get_the_min(groceries)
       result[value] = {}
     }
   }
+  binding.pry
   result.min.keys
 end
